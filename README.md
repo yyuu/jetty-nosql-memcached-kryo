@@ -1,0 +1,1 @@
+# jetty-nosql-memcached-kryo
