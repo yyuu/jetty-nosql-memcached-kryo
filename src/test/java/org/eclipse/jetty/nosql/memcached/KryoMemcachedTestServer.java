@@ -13,18 +13,9 @@ package org.eclipse.jetty.nosql.memcached;
 // You may elect to redistribute this code under either of these licenses. 
 // ========================================================================
 
-
-
-import java.util.concurrent.TimeUnit;
-
-import org.eclipse.jetty.nosql.memcached.MemcachedSessionIdManager;
 import org.eclipse.jetty.nosql.memcached.MemcachedSessionManager;
-import org.eclipse.jetty.server.SessionIdManager;
+import org.eclipse.jetty.nosql.session.kryo.KryoSessionFacade;
 import org.eclipse.jetty.server.SessionManager;
-import org.eclipse.jetty.server.session.AbstractTestServer;
-import org.eclipse.jetty.server.session.SessionHandler;
-import org.eclipse.jetty.nosql.session.kryo.*;
-
 
 /**
  * @version $Revision$ $Date$
