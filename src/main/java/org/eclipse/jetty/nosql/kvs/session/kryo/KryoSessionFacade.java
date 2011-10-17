@@ -1,6 +1,9 @@
-package org.eclipse.jetty.nosql.session.kryo;
+package org.eclipse.jetty.nosql.kvs.session.kryo;
 
-import org.eclipse.jetty.nosql.session.*;
+import org.eclipse.jetty.nosql.kvs.session.AbstractSessionFacade;
+import org.eclipse.jetty.nosql.kvs.session.ISerializableSession;
+import org.eclipse.jetty.nosql.kvs.session.ISerializationTranscoder;
+import org.eclipse.jetty.nosql.kvs.session.TranscoderException;
 
 public class KryoSessionFacade extends AbstractSessionFacade {
 	public KryoSessionFacade() {

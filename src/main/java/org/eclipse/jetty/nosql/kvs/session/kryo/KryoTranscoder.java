@@ -1,7 +1,7 @@
-package org.eclipse.jetty.nosql.session.kryo;
+package org.eclipse.jetty.nosql.kvs.session.kryo;
 
-import org.eclipse.jetty.nosql.session.ISerializationTranscoder;
-import org.eclipse.jetty.nosql.session.TranscoderException;
+import org.eclipse.jetty.nosql.kvs.session.ISerializationTranscoder;
+import org.eclipse.jetty.nosql.kvs.session.TranscoderException;
 
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.ObjectBuffer;

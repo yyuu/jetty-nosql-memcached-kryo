@@ -13,8 +13,8 @@ package org.eclipse.jetty.nosql.memcached;
 // You may elect to redistribute this code under either of these licenses. 
 // ========================================================================
 
+import org.eclipse.jetty.nosql.kvs.session.kryo.KryoSessionFacade;
 import org.eclipse.jetty.nosql.memcached.MemcachedSessionManager;
-import org.eclipse.jetty.nosql.session.kryo.KryoSessionFacade;
 import org.eclipse.jetty.server.SessionManager;
 
 /**
