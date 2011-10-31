@@ -67,7 +67,7 @@ Configuring MemcachedSessionManager and KryoSessionFacade in ${APP_ROOT}/WEB-INF
                 <Ref id="memcachedSessionIdManager" />
               </Set>
               <Set name="sessionFacade">
-                <New class="org.eclipse.jetty.nosql.session.kryo.KryoSessionFacade" />
+                <New class="org.eclipse.jetty.nosql.kvs.session.kryo.KryoSessionFacade" />
               </Set>
             </New>
           </Arg>
