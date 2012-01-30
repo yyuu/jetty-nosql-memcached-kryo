@@ -36,4 +36,10 @@ public class KryoSessionFacade extends AbstractSessionFacade {
 		}
 		return session;
 	}
+
+	@Override
+	public void setClassLoader(ClassLoader cl) {
+		KryoTranscoder tc = new KryoTranscoder(cl);
+		transcoder = tc;
+	}
 }
