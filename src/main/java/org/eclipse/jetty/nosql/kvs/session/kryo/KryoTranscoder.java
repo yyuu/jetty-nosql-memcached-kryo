@@ -8,9 +8,15 @@ import com.esotericsoftware.kryo.ObjectBuffer;
 
 public class KryoTranscoder implements ISerializationTranscoder {
 	private Kryo kryo = null;
+
 	public KryoTranscoder() {
+		this(Thread.currentThread().getContextClassLoader());
+	}
+
+	public KryoTranscoder(ClassLoader cl) {
 		kryo = new Kryo();
 		kryo.setRegistrationOptional(true);
+		kryo.setClassLoader(cl);
 	}
 
 	public byte[] encode(Object obj) throws TranscoderException {

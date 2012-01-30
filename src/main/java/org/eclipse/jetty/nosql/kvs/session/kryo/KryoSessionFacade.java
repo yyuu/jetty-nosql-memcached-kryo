@@ -7,8 +7,12 @@ import org.eclipse.jetty.nosql.kvs.session.TranscoderException;
 
 public class KryoSessionFacade extends AbstractSessionFacade {
 	public KryoSessionFacade() {
+		this(Thread.currentThread().getContextClassLoader());
+	}
+
+	public KryoSessionFacade(ClassLoader cl) {
 		sessionFactory = new KryoSessionFactory();
-		transcoder = new KryoTranscoder();
+		transcoder = new KryoTranscoder(cl);
 	}
 
 	@Override
