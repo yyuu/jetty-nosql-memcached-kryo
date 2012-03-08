@@ -7,6 +7,9 @@ public class ReentrantRequestSessionTest extends AbstractMemcachedReentrantReque
     @Override
     public AbstractTestServer createServer(int port)
     {
-        return new KryoMemcachedTestServer(port);
+        KryoMemcachedTestServer server = new KryoMemcachedTestServer(port);
+        // FIXME: cannot set in parent?
+        swallowExceptions = !server.isFullTest() && !server.isStickyTest();
+        return server;
     }
 }
