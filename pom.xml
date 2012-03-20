@@ -8,6 +8,7 @@
 	<artifactId>jetty-nosql-memcached-kryo</artifactId>
 	<name>jetty-nosql-memcached-kryo</name>
 	<description>A session manager impl for jetty to store sessions on memcached with kryo serialization.</description>
+	<url>https://github.com/yyuu/jetty-nosql-memcached-kryo</url>
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
